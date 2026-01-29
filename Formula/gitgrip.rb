@@ -1,8 +1,8 @@
 class Gitgrip < Formula
   desc "Multi-repo workflow tool for synchronized branches, linked PRs, and atomic merges"
   homepage "https://github.com/laynepenney/gitgrip"
-  url "https://registry.npmjs.org/gitgrip/-/gitgrip-0.4.1.tgz"
-  sha256 "d8146a649a11be8c7587c5e618fb82a7831cbe3da33858d708f4e4d0bf3cf5a8"
+  url "https://registry.npmjs.org/gitgrip/-/gitgrip-0.4.2.tgz"
+  sha256 "477daf79870f83e700455a00e7eb740323ac0d1da6a2b58bd8540b3fdded48a6"
   license "MIT"
 
   depends_on "node"

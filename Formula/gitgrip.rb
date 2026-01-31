@@ -1,15 +1,16 @@
 class Gitgrip < Formula
   desc "Multi-repo workflow tool for synchronized branches, linked PRs, and atomic merges"
   homepage "https://github.com/laynepenney/gitgrip"
-  url "https://registry.npmjs.org/gitgrip/-/gitgrip-0.4.2.tgz"
-  sha256 "477daf79870f83e700455a00e7eb740323ac0d1da6a2b58bd8540b3fdded48a6"
+  url "https://github.com/laynepenney/gitgrip/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "c809f4b411ca66d0d15d0550a8de2a9d59d5c582eb799cd45efe91145cddb312"
   license "MIT"
 
-  depends_on "node"
+  depends_on "rust" => :build
+  depends_on "openssl@3"
+  depends_on "pkg-config" => :build
 
   def install
-    system "npm", "install", *std_npm_args
-    bin.install_symlink Dir["#{libexec}/bin/*"]
+    system "cargo", "install", *std_cargo_args
   end
 
   test do

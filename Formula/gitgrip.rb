@@ -1,8 +1,8 @@
 class Gitgrip < Formula
   desc "Multi-repo workflow tool for synchronized branches, linked PRs, and atomic merges"
   homepage "https://github.com/laynepenney/gitgrip"
-  url "https://github.com/laynepenney/gitgrip/archive/refs/tags/v0.5.3.tar.gz"
-  sha256 "8781136cb19b3f28f6d03e4c2e5356a46073cf1f90f087fcb5a2aff4fbae0ab8"
+  url "https://github.com/laynepenney/gitgrip/archive/refs/tags/v0.5.4.tar.gz"
+  sha256 "7d34944c413fd1f36b0f56cc77aa9d669461bf1491afb1cd59822f46d018a487"
   license "MIT"
 
   depends_on "rust" => :build

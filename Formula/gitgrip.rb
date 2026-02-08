@@ -3,7 +3,7 @@ class Gitgrip < Formula
   homepage "https://github.com/laynepenney/gitgrip"
 
   url "https://github.com/laynepenney/gitgrip/archive/refs/tags/v0.11.0.tar.gz"
-  sha256 "9bbbe7b1dbb45bb9381c65101e7e249f0819df5ce39433644927ba59746b591c"
+  sha256 "ae853f1bc63650beee496458e05425e1075f93d09c0f28090fcc711c3c12ebaa"
 
   license "MIT"
 

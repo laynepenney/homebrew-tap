@@ -1,9 +1,18 @@
 class Gitgrip < Formula
   desc "Multi-repo workflow tool for synchronized branches, linked PRs, and atomic merges"
-  homepage "https://github.com/laynepenney/gitgrip"
+  homepage "https://synapt.dev/grip"
 
-  url "https://github.com/laynepenney/gitgrip/archive/refs/tags/v0.17.1.tar.gz"
-  sha256 "184ab2f71f34c4239def569f78e3d738118592b45348b9f65cf2e1df8d248da2"
+  # This tap is RETIRED. It now installs the same build as the canonical tap so
+  # that anyone still tapped here upgrades rather than strands on an old version.
+  #
+  #   brew untap laynepenney/tap
+  #   brew install synapt-dev/tap/gitgrip
+  #
+  # It previously installed v0.17.1 from a repository that has since moved to
+  # synapt-dev/grip. GitHub redirected the old URL, so the stale formula kept
+  # resolving and quietly installed a five-month-old build.
+  url "https://github.com/synapt-dev/grip/archive/refs/tags/v1.0.2.tar.gz"
+  sha256 "33ad07627f3b2e9e50fae58782a91078796451e5446e3d0f83f9e4182717c260"
 
   license "MIT"
 
